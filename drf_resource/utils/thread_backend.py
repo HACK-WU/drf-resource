@@ -23,8 +23,8 @@ from threading import Thread
 from django import db
 from django.utils import timezone, translation
 
-from bk_resource.utils.local import local
-from bk_resource.utils.logger import logger
+from drf_resource.utils.local import local
+from drf_resource.utils.logger import logger
 
 
 class InheritParentThread(Thread):

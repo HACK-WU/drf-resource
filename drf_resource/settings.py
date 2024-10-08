@@ -37,11 +37,11 @@ class BkResourceSettings:
             "bk_app_code": settings.APP_CODE,
             "bk_app_secret": settings.SECRET_KEY,
         },
-        DEFAULT_ERROR_RESPONSE_SERIALIZER="bk_resource.serializers.ErrorResponseSerializer",
-        DEFAULT_PAGINATOR_RESPONSE_BUILDER="bk_resource.serializers.PaginatorResponseBuilder",
-        DEFAULT_STANDARD_RESPONSE_BUILDER="bk_resource.serializers.StandardResponseBuilder",
-        DEFAULT_SWAGGER_SCHEMA_CLASS="bk_resource.utils.inspectors.BkResourceSwaggerAutoSchema",
-        REQUEST_LOG_HANDLER="bk_resource.utils.request_log.RequestLogHandler",
+        DEFAULT_ERROR_RESPONSE_SERIALIZER="drf_resource.serializers.ErrorResponseSerializer",
+        DEFAULT_PAGINATOR_RESPONSE_BUILDER="drf_resource.serializers.PaginatorResponseBuilder",
+        DEFAULT_STANDARD_RESPONSE_BUILDER="drf_resource.serializers.StandardResponseBuilder",
+        DEFAULT_SWAGGER_SCHEMA_CLASS="drf_resource.utils.inspectors.BkResourceSwaggerAutoSchema",
+        REQUEST_LOG_HANDLER="drf_resource.utils.request_log.RequestLogHandler",
         REQUEST_LOG_SPLIT_LENGTH=0,
         REQUEST_VERIFY=True,
         PLATFORM_AUTH_ENABLED=False,
@@ -87,7 +87,7 @@ class BkResourceSettings:
         """
 
         if key not in self.SETTINGS.keys():
-            raise KeyError("[%s] is not a valid key for bk_resource" % key)
+            raise KeyError("[%s] is not a valid key for drf_resource" % key)
 
     def __load_key(self, key: str, val: Union[str, callable]) -> any:
         """

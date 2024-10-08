@@ -22,9 +22,9 @@ from django.apps import apps
 from django.conf import settings
 from django.contrib.staticfiles.finders import BaseFinder
 
-from bk_resource.management.exceptions import ErrorSettingsWithResourceDirs
-from bk_resource.settings import bk_resource_settings
-from bk_resource.utils.text import path_to_dotted
+from drf_resource.management.exceptions import ErrorSettingsWithResourceDirs
+from drf_resource.settings import bk_resource_settings
+from drf_resource.utils.text import path_to_dotted
 
 API_DIR = bk_resource_settings.DEFAULT_API_DIR
 RESOURCE_DIRS = bk_resource_settings.DEFAULT_RESOURCE_DIRS

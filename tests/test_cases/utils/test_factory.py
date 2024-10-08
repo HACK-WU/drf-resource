@@ -21,7 +21,7 @@ from enum import Enum
 import pytest
 from django.test import TestCase
 
-from bk_resource.utils.factory import GenericFactory, SimpleFactory, SingletonFactory
+from drf_resource.utils.factory import GenericFactory, SimpleFactory, SingletonFactory
 
 
 class MockType(Enum):

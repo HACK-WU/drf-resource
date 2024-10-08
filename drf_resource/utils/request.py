@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from django.test import RequestFactory
 
-from bk_resource.utils.local import local
+from drf_resource.utils.local import local
 
 
 def get_request_username(default=""):

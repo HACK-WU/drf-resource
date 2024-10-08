@@ -26,10 +26,10 @@ from django.utils.translation import gettext
 from rest_framework import serializers
 from rest_framework.fields import empty
 
-from bk_resource.settings import bk_resource_settings
-from bk_resource.utils.common_utils import ignored
-from bk_resource.utils.logger import logger
-from bk_resource.utils.text import camel_to_underscore
+from drf_resource.settings import bk_resource_settings
+from drf_resource.utils.common_utils import ignored
+from drf_resource.utils.logger import logger
+from drf_resource.utils.text import camel_to_underscore
 
 
 class FieldType(object):

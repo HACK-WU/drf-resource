@@ -21,7 +21,7 @@ from unittest import mock
 from django.conf import settings
 from django.test import TestCase, override_settings
 
-from bk_resource.exceptions import PlatformAuthParamsNotExist
+from drf_resource.exceptions import PlatformAuthParamsNotExist
 from tests.mock.contrib.api import MockSession
 from tests.mock.contrib.bk_api import (
     MockApiResource,

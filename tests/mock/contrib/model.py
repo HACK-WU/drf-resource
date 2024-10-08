@@ -19,7 +19,7 @@ to the current version of the project delivered to anyone in the future.
 from django.db import models
 from rest_framework import serializers
 
-from bk_resource.contrib.model import ModelResource
+from drf_resource.contrib.model import ModelResource
 
 DEFAULT_OBJ = {"pk": 1}
 

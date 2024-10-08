@@ -19,8 +19,8 @@ to the current version of the project delivered to anyone in the future.
 from rest_framework.routers import DefaultRouter
 from rest_framework.viewsets import GenericViewSet
 
-from bk_resource.tools import get_underscore_viewset_name
-from bk_resource.viewsets import ResourceViewSet
+from drf_resource.tools import get_underscore_viewset_name
+from drf_resource.viewsets import ResourceViewSet
 
 
 class ResourceRouter(DefaultRouter):

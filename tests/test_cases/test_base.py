@@ -19,8 +19,8 @@ to the current version of the project delivered to anyone in the future.
 from django.test import TestCase
 from rest_framework import serializers
 
-from bk_resource import Resource
-from bk_resource.exceptions import ValidateException
+from drf_resource import Resource
+from drf_resource.exceptions import ValidateException
 from tests.mock import base
 from tests.mock.base import (
     DirectResource,

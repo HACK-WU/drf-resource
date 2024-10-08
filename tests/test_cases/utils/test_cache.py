@@ -21,7 +21,7 @@ import time
 
 from django.test import TestCase
 
-from bk_resource.utils.cache import CacheTypeItem, InstanceCache, using_cache
+from drf_resource.utils.cache import CacheTypeItem, InstanceCache, using_cache
 from tests.constants.utils.cache import (
     DEFAULT_CACHE_DATA,
     DEFAULT_CACHE_KEY,

@@ -16,11 +16,12 @@ We undertake not to change the open source license (MIT license) applicable
 to the current version of the project delivered to anyone in the future.
 """
 
-from django.core.management.base import BaseCommand
+from drf_resource.contrib.api import APIResource
+from drf_resource.contrib.bk_api import BkApiResource
+from drf_resource.contrib.cache import CacheResource
 
-from bk_resource.management.stub_file_generator import generate_stub_file
-
-
-class Command(BaseCommand):
-    def handle(self, **kwargs):
-        generate_stub_file()
+__all__ = [
+    "APIResource",
+    "CacheResource",
+    "BkApiResource",
+]

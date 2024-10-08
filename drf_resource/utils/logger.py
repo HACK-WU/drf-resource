@@ -2,7 +2,7 @@
 """
 TencentBlueKing is pleased to support the open source community by making
 蓝鲸智云 - Resource SDK (BlueKing - Resource SDK) available.
-Copyright (C) 2022 THL A29 Limited,
+Copyright (C) 2023 THL A29 Limited,
 a Tencent company. All rights reserved.
 Licensed under the MIT License (the "License");
 you may not use this file except in compliance with the License.
@@ -16,15 +16,6 @@ We undertake not to change the open source license (MIT license) applicable
 to the current version of the project delivered to anyone in the future.
 """
 
-import os
+import logging
 
-from django.core.management.commands.startapp import Command as _Command
-
-import bk_resource
-
-
-class Command(_Command):
-    def handle_template(self, template, subdir):
-        if template is None:
-            template = os.path.join(bk_resource.__path__[0], "conf", "app_template")
-        return super().handle_template(template, subdir)
+logger = logging.getLogger("drf_resource")

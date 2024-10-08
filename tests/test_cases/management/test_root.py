@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from django.test import TestCase
 
-from bk_resource import resource
+from drf_resource import resource
 
 
 class TestRoot(TestCase):

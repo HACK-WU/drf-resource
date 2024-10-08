@@ -8,7 +8,7 @@ from blueapps.conf.log import get_logging_config_dict
 # 请在这里加入你的自定义 APP
 INSTALLED_APPS += (
     "corsheaders",
-    "bk_resource",
+    "drf_resource",
     "rest_framework",
     "drf_yasg",
 )
@@ -50,7 +50,7 @@ CELERY_IMPORTS = ()
 LOG_TIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
 LOGGING = get_logging_config_dict(locals())
 LOGGING["formatters"]["verbose"] = {"()": "core.log.JSONLogFormatter"}
-LOGGING["loggers"]["bk_resource"] = LOGGING["loggers"]["app"]
+LOGGING["loggers"]["drf_resource"] = LOGGING["loggers"]["app"]
 LOGGING["loggers"]["bk_audit"] = LOGGING["loggers"]["app"]
 LOGGING["loggers"]["iam"] = LOGGING["loggers"]["app"]
 for _l in LOGGING["loggers"].values():
@@ -104,7 +104,7 @@ PLATFORM_CODE = "00"
 # BkResource - Swagger
 SWAGGER_SETTINGS = {
     "DEFAULT_INFO": "urls.info",
-    "DEFAULT_GENERATOR_CLASS": "bk_resource.utils.generators.BKResourceOpenAPISchemaGenerator",
+    "DEFAULT_GENERATOR_CLASS": "drf_resource.utils.generators.BKResourceOpenAPISchemaGenerator",
 }
 
 # BkResource - Settings

@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from rest_framework import serializers
 
-from bk_resource import Resource
+from drf_resource import Resource
 from tests.mock.models import User
 
 

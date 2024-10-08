@@ -18,13 +18,13 @@ to the current version of the project delivered to anyone in the future.
 
 from django.apps import AppConfig
 
-from bk_resource.management.root import setup
+from drf_resource.management.root import setup
 
 
 class BKResourceConfig(AppConfig):
-    name = "bk_resource"
-    verbose_name = "bk_resource"
-    label = "bk_resource"
+    name = "drf_resource"
+    verbose_name = "drf_resource"
+    label = "drf_resource"
 
     def ready(self):
         setup()

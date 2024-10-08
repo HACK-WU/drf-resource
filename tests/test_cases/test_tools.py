@@ -19,7 +19,7 @@ to the current version of the project delivered to anyone in the future.
 from django.test import TestCase
 from rest_framework.fields import empty
 
-from bk_resource.tools import (
+from drf_resource.tools import (
     format_serializer_errors,
     get_serializer_fields,
     get_underscore_viewset_name,

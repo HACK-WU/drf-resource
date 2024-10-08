@@ -31,8 +31,8 @@ from rest_framework.response import Response
 from rest_framework.serializers import Serializer
 from rest_framework_condition import condition
 
-from bk_resource.base import Resource
-from bk_resource.settings import bk_resource_settings
+from drf_resource.base import Resource
+from drf_resource.settings import bk_resource_settings
 
 
 class ResourceRoute(object):

@@ -2,7 +2,7 @@
 
 import abc
 
-from bk_resource import BkApiResource
+from drf_resource import BkApiResource
 from django.utils.translation import gettext_lazy as _
 
 from api.domains import USER_MANAGE_URL

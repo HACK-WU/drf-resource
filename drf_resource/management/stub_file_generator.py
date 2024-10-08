@@ -21,8 +21,8 @@ import inspect
 from django.conf import settings
 from django.template import engines
 
-from bk_resource.management.root import ResourceShortcut
-from bk_resource.utils.logger import logger
+from drf_resource.management.root import ResourceShortcut
+from drf_resource.utils.logger import logger
 
 django_engine = engines["django"]
 
@@ -91,7 +91,7 @@ def render(define_tree, tab=0):
 def generate_stub_file():
     import os
 
-    from bk_resource import api, resource
+    from drf_resource import api, resource
 
     def search_attr(instance):
         resource_tree = {}

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from bk_resource import resource
-from bk_resource.viewsets import ResourceRoute, ResourceViewSet
+from drf_resource import resource
+from drf_resource.viewsets import ResourceRoute, ResourceViewSet
 
 
 class ViewSet(ResourceViewSet):

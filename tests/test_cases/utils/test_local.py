@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from django.test import TestCase
 
-from bk_resource.utils.local import (
+from drf_resource.utils.local import (
     Local,
     local,
     with_client_operator,

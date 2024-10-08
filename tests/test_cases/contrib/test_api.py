@@ -20,7 +20,7 @@ from unittest import mock
 
 from django.test import TestCase
 
-from bk_resource.exceptions import APIRequestError
+from drf_resource.exceptions import APIRequestError
 from tests.mock.contrib.api import (
     MockErrorSession,
     MockGetAPI,

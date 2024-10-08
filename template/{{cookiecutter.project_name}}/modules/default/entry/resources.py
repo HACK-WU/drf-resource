@@ -3,7 +3,7 @@
 import abc
 import os
 
-from bk_resource import Resource
+from drf_resource import Resource
 from blueapps.account.conf import ConfFixture
 from django.conf import settings
 

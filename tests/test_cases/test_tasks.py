@@ -20,7 +20,7 @@ from unittest import mock
 
 from django.test import TestCase
 
-from bk_resource.tasks import query_task_result, run_perform_request
+from drf_resource.tasks import query_task_result, run_perform_request
 from tests.constants.tasks import (
     DEFAULT_PERFORM_REQUEST_DATA,
     DEFAULT_PERFORM_REQUEST_USERNAME,

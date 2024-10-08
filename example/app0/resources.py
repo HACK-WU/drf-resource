@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from blueapps.utils.request_provider import get_local_request
 
-from bk_resource import Resource
+from drf_resource import Resource
 
 from .serializers import (
     UpdateUserInfoRequestSerializer,

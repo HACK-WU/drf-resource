@@ -21,7 +21,7 @@ from unittest.mock import MagicMock
 
 from requests import Request, Response
 
-from bk_resource import APIResource
+from drf_resource import APIResource
 
 
 class MockAPIResource(APIResource, abc.ABC):

@@ -18,8 +18,8 @@ to the current version of the project delivered to anyone in the future.
 
 from unittest import mock
 
-from bk_resource.exceptions import CustomError
-from bk_resource.tasks import step
+from drf_resource.exceptions import CustomError
+from drf_resource.tasks import step
 
 
 class AsyncResultMock(mock.MagicMock):

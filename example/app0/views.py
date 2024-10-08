@@ -16,8 +16,8 @@ We undertake not to change the open source license (MIT license) applicable
 to the current version of the project delivered to anyone in the future.
 """
 
-from bk_resource import resource
-from bk_resource.viewsets import ResourceRoute, ResourceViewSet
+from drf_resource import resource
+from drf_resource.viewsets import ResourceRoute, ResourceViewSet
 
 from .resources import UpdateUserInfoResource
 

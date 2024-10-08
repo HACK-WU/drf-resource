@@ -9,7 +9,7 @@
 建议在 `requirements.txt` 中指定版本，避免后续 SDK 的大版本更新导致业务不可用
 
 ```bash
-pip install bk_resource
+pip install drf_resource
 ```
 
 ### 1.2 在 `INSTALLED_APPS` 中增加 `bk_resource`
@@ -18,7 +18,7 @@ pip install bk_resource
 INSTALLED_APPS = (
     ...,
     "rest_framework",
-    "bk_resource",
+    "drf_resource",
     "example.app0",
     ...
 )
@@ -98,7 +98,7 @@ REST_FRAMEWORK = {
 在 `resources.py` 文件中，引入 `Resource`，并在 `perform_request` 函数中编写业务逻辑。
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 from blueapps.utils.request_provider import get_local_request
 
 
@@ -151,7 +151,7 @@ class UpdateUserInfoResponseSerializer(serializers.ModelSerializer):
 在 Resource 中声明 Serializer
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 from blueapps.utils.request_provider import get_local_request
 from example.app0.serializers import UpdateUserInfoRequestSerializer, UpdateUserInfoResponseSerializer
 
@@ -188,8 +188,8 @@ retrieve)，按照如下指引，可以快速声明路由。
 在 `views.py` 文件中，声明使用到的路由信息
 
 ```python
-from bk_resource import resource
-from bk_resource.viewsets import ResourceRoute, ResourceViewSet
+from drf_resource import resource
+from drf_resource.viewsets import ResourceRoute, ResourceViewSet
 from example.app0.resources import UpdateUserInfoResource
 
 
@@ -212,7 +212,7 @@ class UserViewSet(ResourceViewSet):
 在 `urls.py` 文件中，增加 `urlpatterns`
 
 ```python
-from bk_resource.routers import ResourceRouter
+from drf_resource.routers import ResourceRouter
 from example.app0 import views
 
 router = ResourceRouter()

@@ -23,15 +23,15 @@ from importlib import import_module
 from django.conf import settings
 from django.utils.module_loading import import_string
 
-from bk_resource.base import Resource
-from bk_resource.management.exceptions import (
+from drf_resource.base import Resource
+from drf_resource.management.exceptions import (
     ResourceModuleConflict,
     ResourceModuleNotRegistered,
     ResourceNotRegistered,
 )
-from bk_resource.management.finder import API_DIR, ResourceFinder
-from bk_resource.utils.logger import logger
-from bk_resource.utils.text import camel_to_underscore, path_to_dotted
+from drf_resource.management.finder import API_DIR, ResourceFinder
+from drf_resource.utils.logger import logger
+from drf_resource.utils.text import camel_to_underscore, path_to_dotted
 
 __setup__ = False
 __doc__ = """

@@ -22,9 +22,9 @@ from blueapps.core.celery import celery_app
 from celery.result import AsyncResult
 from django.utils.module_loading import import_string
 
-from bk_resource.exceptions import CustomError
-from bk_resource.utils.logger import logger
-from bk_resource.utils.request import set_local_username
+from drf_resource.exceptions import CustomError
+from drf_resource.utils.logger import logger
+from drf_resource.utils.request import set_local_username
 
 
 @celery_app.task(bind=True)

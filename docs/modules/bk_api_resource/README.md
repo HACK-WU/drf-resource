@@ -46,28 +46,30 @@ class APIResource(ApiResourceProtocol, CacheResource, metaclass=abc.ABCMeta)
 **样例：**
 
 定义API
+
 ```python
 # api/bk_community/default.py
 
 import abc
 
-from bk_resource import BkApiResource
+from drf_resource import BkApiResource
 from django.utils.translation import gettext_lazy
 
 
 class CommunityResource(BkApiResource, abc.ABC):
-   base_url = "https://bk.tencent.com/s-mart/forum"
-   module_name = "bk_community"
+    base_url = "https://bk.tencent.com/s-mart/forum"
+    module_name = "bk_community"
 
 
 class TopicsResource(CommunityResource):
-   name = gettext_lazy("查询论坛主题")
-   method = "GET"
-   action = "/topics/"
+    name = gettext_lazy("查询论坛主题")
+    method = "GET"
+    action = "/topics/"
 ```
 调用API：
+
 ```python
-from bk_resource import api
+from drf_resource import api
 
 api.bk_community.topics(keyword="test", page=1, page_size=1)
 ```
@@ -84,8 +86,9 @@ class TopicsResource(CommunityResource):
     url_keys = ["topic_id"]
 ```
 调用API：
+
 ```python
-from bk_resource import api
+from drf_resource import api
 
 api.bk_community.topics(keyword="test", topic_id=2002)
 ```

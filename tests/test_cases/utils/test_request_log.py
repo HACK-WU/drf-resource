@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from django.test import TestCase
 
-from bk_resource.utils.request_log import BaseRequestLogHandler, RequestLogHandler
+from drf_resource.utils.request_log import BaseRequestLogHandler, RequestLogHandler
 from tests.constants.utils.request_log import DEFAULT_REQUEST_LOG_KWARGS
 
 

@@ -25,9 +25,9 @@ from django.utils.translation import gettext
 from rest_framework.generics import GenericAPIView
 from rest_framework.viewsets import ModelViewSet
 
-from bk_resource import Resource
-from bk_resource.base import Empty
-from bk_resource.utils.request import get_mock_request
+from drf_resource import Resource
+from drf_resource.base import Empty
+from drf_resource.utils.request import get_mock_request
 
 
 class ViewMixin(GenericAPIView):

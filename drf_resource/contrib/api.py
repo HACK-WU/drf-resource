@@ -24,10 +24,10 @@ from django.utils.encoding import force_str
 from django.utils.translation import gettext
 from requests.exceptions import HTTPError
 
-from bk_resource.contrib.cache import CacheResource
-from bk_resource.exceptions import APIRequestError
-from bk_resource.settings import bk_resource_settings
-from bk_resource.utils.logger import logger
+from drf_resource.contrib.cache import CacheResource
+from drf_resource.exceptions import APIRequestError
+from drf_resource.settings import bk_resource_settings
+from drf_resource.utils.logger import logger
 
 
 class ApiResourceProtocol(metaclass=abc.ABCMeta):

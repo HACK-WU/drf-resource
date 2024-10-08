@@ -22,7 +22,7 @@ with open("readme.md") as f:
     readme = f.read()
 
 setup(
-    name="bk_resource",
+    name="drf_resource",
     version="0.4.12",
     author="blueking",
     url="https://bk.tencent.com",
@@ -31,12 +31,12 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     packages=[
-        "bk_resource",
-        "bk_resource.conf",
-        "bk_resource.contrib",
-        "bk_resource.management",
-        "bk_resource.management.commands",
-        "bk_resource.utils",
+        "drf_resource",
+        "drf_resource.conf",
+        "drf_resource.contrib",
+        "drf_resource.management",
+        "drf_resource.management.commands",
+        "drf_resource.utils",
     ],
     install_requires=[
         "blueapps>=4.12.0",

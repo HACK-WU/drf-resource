@@ -20,8 +20,8 @@ import abc
 import json
 from datetime import datetime
 
-from bk_resource.settings import bk_resource_settings
-from bk_resource.utils.logger import logger
+from drf_resource.settings import bk_resource_settings
+from drf_resource.utils.logger import logger
 
 
 class BaseRequestLogHandler:

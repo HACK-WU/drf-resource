@@ -30,7 +30,7 @@ Resource的返回值应只有唯一一种格式，即ResponseSerializer规定好
 原则上，Resource 不允许只返回单个数字或字符串，因为这样不符合 Restful 的接口规范，必须将数据包装成 dict 后再返回。例如：
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 
 
 # 错误
@@ -57,7 +57,7 @@ class AnotherPermissionResource(Resource):
 #### 返回 ORM Model
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 from rest_framework import serializers
 from example.app0.models import UserInfo
 
@@ -83,7 +83,7 @@ class UserInfoResource(Resource):
 若 Serializer 无复用性，则可写为内嵌类
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 from rest_framework import serializers
 
 
@@ -105,7 +105,7 @@ class UpdateUserInfoResource(Resource):
 若 Serializer 具有复用性，可以导入后进行声明
 
 ```python
-from bk_resource import Resource
+from drf_resource import Resource
 from example.app0.serializers import UpdateUserInfoRequestSerializer, UpdateUserInfoResponseSerializer
 
 
@@ -128,7 +128,7 @@ Serializer 无法自动注册为 Swagger 的请求与响应示例)
 
 ```python
 import abc
-from bk_resource import Resource
+from drf_resource import Resource
 from example.app0 import serializers
 
 
@@ -186,7 +186,7 @@ update_user_info(new_username="BlueKing")
 这里的转换规则为，`resource.{包名}.{小写下划线分割的类名}`，如果有多层包，都需要写出来，即 `resource.{包名}.{包名}.…….{包名}.{小写下划线分割的类名}`，类名的转换规则可以查看 `bk_resource.management.root.ResourceShortcut._setup`
 
 ```python
-from bk_resource import resource
+from drf_resource import resource
 
 # 传入字典类型参数
 resource.app0.update_user_info({"new_username": "BlueKing"})
@@ -205,7 +205,7 @@ Resource 提供了 `bulk_request` 方法，基于多线程实现的批量请求�
 # 声明 Resource
 
 import requests
-from bk_resource import Resource
+from drf_resource import Resource
 
 
 class IoIntensiveResource(Resource):

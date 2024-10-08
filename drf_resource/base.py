@@ -26,13 +26,13 @@ from django.http.response import HttpResponseBase
 from django.utils.translation import gettext
 from rest_framework.response import Response
 
-from bk_resource.exceptions import ValidateException
-from bk_resource.settings import bk_resource_settings
-from bk_resource.tasks import run_perform_request
-from bk_resource.tools import format_serializer_errors, get_processes
-from bk_resource.utils.logger import logger
-from bk_resource.utils.request import get_request_username
-from bk_resource.utils.thread_backend import ThreadPool
+from drf_resource.exceptions import ValidateException
+from drf_resource.settings import bk_resource_settings
+from drf_resource.tasks import run_perform_request
+from drf_resource.tools import format_serializer_errors, get_processes
+from drf_resource.utils.logger import logger
+from drf_resource.utils.request import get_request_username
+from drf_resource.utils.thread_backend import ThreadPool
 
 __doc__ = """
 Non-ORM for DRF 的架构：

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from bk_resource import api as _api
-from bk_resource import resource as _resource
+from drf_resource import api as _api
+from drf_resource import resource as _resource
 from django.conf import settings
 from django.test import TestCase as _TestCase
 

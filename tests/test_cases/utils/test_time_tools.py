@@ -21,7 +21,7 @@ import random
 
 from django.test import TestCase, override_settings
 
-from bk_resource.utils.time_tools import (
+from drf_resource.utils.time_tools import (
     biz2utc_str,
     biz_time_zone_offset,
     date2str,

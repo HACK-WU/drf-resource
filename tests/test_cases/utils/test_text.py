@@ -18,7 +18,7 @@ to the current version of the project delivered to anyone in the future.
 
 from django.test import TestCase
 
-from bk_resource.utils.text import (
+from drf_resource.utils.text import (
     camel_to_underscore,
     convert_filename,
     cut_str_by_max_bytes,

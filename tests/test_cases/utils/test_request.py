@@ -22,8 +22,8 @@ from unittest import mock
 from django.core.handlers.wsgi import WSGIRequest
 from django.test import TestCase
 
-from bk_resource.utils.local import local
-from bk_resource.utils.request import (
+from drf_resource.utils.local import local
+from drf_resource.utils.request import (
     get_mock_request,
     get_request_username,
     set_local_username,

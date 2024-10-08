@@ -16,11 +16,11 @@ We undertake not to change the open source license (MIT license) applicable
 to the current version of the project delivered to anyone in the future.
 """
 
-from bk_resource.base import Resource
-from bk_resource.contrib import APIResource, BkApiResource, CacheResource
-from bk_resource.management.root import adapter, api, resource
+from drf_resource.base import Resource
+from drf_resource.contrib import APIResource, BkApiResource, CacheResource
+from drf_resource.management.root import adapter, api, resource
 
-default_app_config = "bk_resource.apps.BKResourceConfig"
+default_app_config = "drf_resource.apps.BKResourceConfig"
 
 __author__ = "蓝鲸智云"
 __copyright__ = "Copyright (c)   2012-2021 Tencent BlueKing. All Rights Reserved."

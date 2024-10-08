@@ -5,8 +5,8 @@
 自定义的ViewSet类通过继承ResourceViewSet类实现。 在 drf_non_orm 中，视图函数已被高度抽象为基于 `ResourceRoute` 类的配置。 因此，原则上，ViewSet 类不应定义任何的视图函数，但仍支持部分原有属性配置，如鉴权配置 `permission_classes`。
 
 ```python
-from bk_resource import resource
-from bk_resource.viewsets import ResourceRoute, ResourceViewSet
+from drf_resource import resource
+from drf_resource.viewsets import ResourceRoute, ResourceViewSet
 from example.app0.resources import UpdateUserInfoResource
 
 

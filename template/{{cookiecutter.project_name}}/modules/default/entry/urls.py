@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from bk_resource.routers import ResourceRouter
+from drf_resource.routers import ResourceRouter
 
 from modules.default.entry import views
 

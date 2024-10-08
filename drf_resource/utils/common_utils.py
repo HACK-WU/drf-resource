@@ -38,8 +38,8 @@ from django.utils.encoding import force_str
 from django.utils.functional import Promise
 from django.utils.timezone import is_aware
 
-from bk_resource.utils import time_tools
-from bk_resource.utils.logger import logger
+from drf_resource.utils import time_tools
+from drf_resource.utils.logger import logger
 
 IDS_REGEX = re.compile(r"^\d+(,\d+)*$")
 

@@ -26,7 +26,7 @@ from django.test import TestCase
 from django.utils.encoding import force_str
 from django.utils.functional import Promise
 
-from bk_resource.utils.common_utils import (
+from drf_resource.utils.common_utils import (
     DatetimeEncoder,
     DictObj,
     convert_to_cmdline_args_str,

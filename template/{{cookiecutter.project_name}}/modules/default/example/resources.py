@@ -2,7 +2,7 @@
 
 import abc
 
-from bk_resource import Resource, api
+from drf_resource import Resource, api
 from blueapps.utils.request_provider import get_request_username
 
 from modules.default.example.serializers import (

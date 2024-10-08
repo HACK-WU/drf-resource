@@ -16,7 +16,7 @@ We undertake not to change the open source license (MIT license) applicable
 to the current version of the project delivered to anyone in the future.
 """
 
-BK_RESOURCE = "bk_resource"
+BK_RESOURCE = "drf_resource"
 BK_RESOURCE_PACKAGES = [
     "apps",
     "base",

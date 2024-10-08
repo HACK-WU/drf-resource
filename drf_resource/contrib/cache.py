@@ -18,8 +18,8 @@ to the current version of the project delivered to anyone in the future.
 
 import abc
 
-from bk_resource.base import Resource
-from bk_resource.utils.cache import CacheTypeItem, using_cache
+from drf_resource.base import Resource
+from drf_resource.utils.cache import CacheTypeItem, using_cache
 
 
 class CacheResource(Resource, metaclass=abc.ABCMeta):
